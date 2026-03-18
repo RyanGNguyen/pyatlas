@@ -125,3 +125,6 @@ DEP003 = ["marimo"]
 
 [tool.ty.environment]
 root = ["./pyatlas"]
+
+[tool.deppy]
+extend_exclude = ["docs", "tests", "notebooks"]

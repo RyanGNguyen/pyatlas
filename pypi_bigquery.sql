@@ -17,6 +17,7 @@ latest_metadata AS (
     LOWER(name) AS name_lower,
     name,
     description,
+    description_content_type,
     summary,
     version,
     upload_time,
@@ -27,7 +28,7 @@ latest_metadata AS (
 SELECT
   lm.name AS name,
   lm.description AS description,
-  description_content_type,
+  lm.description_content_type AS description_content_type,
   lm.summary AS summary,
   lm.version AS latest_version,
   rd.download_count AS number_of_downloads
